@@ -50,22 +50,8 @@ a:hover {
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
-background-color: lightgrey;
+background-color: #F2F2F2;
 }
-.link_p2 {
-    border: 1px solid #527ce6;
-    border-radius: 4px;
-    display: inline-block;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 6px 20px;
-    text-decoration: none;
-    background-color: #527ce6;
-    color: rgb(255, 255, 255);
-  }
-
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -77,34 +63,22 @@ background-color: lightgrey;
     margin: 10px;
 }
 .texto_p2 {
-     float: left; margin: 10px;
+    position: fixed;
+    right: 10px;
+    float: none;
 }
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
-    background: #23232e;
+    background: #182625;
     height: 8vh;
     position: sticky; top: 0;
 }
 h2 {
     margin: 5px;
 }
-.link_nav {
-    float: none; margin: 10px;
-    border: 1px solid #527ce6;
-    border-radius: 4px;
-    display: inline-block;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 6px 20px;
-    text-decoration: none;
-    background-color: #527ce6;
-    color: aliceblue;
-  }
 
 .container2 {
     display: grid;
@@ -113,10 +87,9 @@ h2 {
 }
 h1 {
     text-align: center;
+    color: #28403d;
   }
-.colunas_p2 {
-    grid-row: 1 / span 2;
-}
+
 .container_p2_1 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -147,5 +120,45 @@ padding-bottom: 10px;
 }
 .link_p1 {
     color: black;
+    font-size: 20px;
+}
+.link_menorP1 {
+    color: black;
     font-size: 16px;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* layout página 4 */
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+.layout_p4 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.layout_p4 > div {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+nav {
+    position: fixed; top: 0px;
+    width: 100%;
+    height: 8%;
+
+}
+.espaço {
+    margin: 30px;
+    columns: 50% 50%;
+}
+
+.testando{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
 }
