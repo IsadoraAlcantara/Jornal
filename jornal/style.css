@@ -58,12 +58,11 @@ background-color: #F2F2F2;
 }
 .fotos {
     display: grid;
-    grid-template-columns: 33,3% 33,3% 33,3%;
-    grid-columns: 33,3;
     margin: 10px;
+    box-shadow: 3px 5px 4px black;
+    border-radius: 5px;
 }
 .texto_p2 {
-    position: fixed;
     right: 10px;
     float: none;
 }
@@ -78,6 +77,7 @@ nav {
 }
 h2 {
     margin: 5px;
+    color: #455554;
 }
 
 .container2 {
@@ -85,16 +85,6 @@ h2 {
     grid-template-columns: 25% 25% 25% 25%;
     margin: 10px;
 }
-h1 {
-    text-align: center;
-    color: #28403d;
-  }
-
-.container_p2_1 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-  }
 img {
     max-width: 100%;
     display: block;
@@ -135,6 +125,7 @@ img {
 h1 {
     text-align: center;
     margin-top: 100px;
+    color: #28403d;
 }
 .layout_p4 {
     display: flex;
@@ -146,6 +137,7 @@ h1 {
     flex: 1 1 300px;
     margin: 10px;
 }
+/* fim layout página 4 */
 nav {
     position: fixed; top: 0px;
     width: 100%;
@@ -156,9 +148,31 @@ nav {
     margin: 30px;
     columns: 50% 50%;
 }
-
 .testando{
     display: grid;
     grid-template-columns: 400px 1fr;
     align-items: center;
+}
+/* layout página 3 */
+.layout_p3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+.layout_p3 > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+.layout_p3 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    border-top: 10px;
+    display: block;
+}
+body {
+    margin-bottom: 100px;
 }
